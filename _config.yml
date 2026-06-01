@@ -1,0 +1,35 @@
+theme: minima
+title: Zeiterfassung
+description: Arbeitszeiterfassung mit Schutz der Privatsphäre — alles bleibt auf dem Gerät
+
+# GitHub Pages Setup (Repo Zeiterfassung-privacy, public):
+#   1. Repo-Settings → Pages → Source: "Deploy from branch"
+#   2. Branch: "main" / Folder: "/ (root)"
+#   3. URL: https://macstacker.github.io/Zeiterfassung-privacy/
+#
+# Die Datenschutzerklärung ist erreichbar unter:
+#   https://macstacker.github.io/Zeiterfassung-privacy/privacy/
+# bzw. die EN-Variante:
+#   https://macstacker.github.io/Zeiterfassung-privacy/privacy_en/
+
+plugins:
+  - jekyll-relative-links
+
+include:
+  - privacy.md
+  - privacy_en.md
+
+exclude:
+  - README.md
+
+# Permalinks: kurze URLs trotz langer Dateinamen.
+permalink: pretty
+defaults:
+  - scope:
+      path: privacy.md
+    values:
+      permalink: /privacy/
+  - scope:
+      path: privacy_en.md
+    values:
+      permalink: /privacy_en/
