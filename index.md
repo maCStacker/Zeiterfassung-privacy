@@ -11,10 +11,12 @@ Zeiterfassung ist eine Android-App zum Erfassen der eigenen Arbeitszeit:
 Stempeln (auch per NFC), Pausenregeln, Kernzeit, Überstunden, Konten, Historie,
 Benachrichtigungen sowie Export als PDF/Text.
 
-* **Rein lokal** — keine Cloud, kein Server, keine Anmeldung.
-* **Keine Internet-Berechtigung** in der veröffentlichten App.
+* **Deine Daten bleiben lokal** — keine Cloud, kein Server, keine Anmeldung.
 * **Kein Tracking, keine Werbung, keine Drittanbieter.**
 * Backup/Export passiert nur auf deine eigene Aktion.
+* **Einzige Ausnahme:** ein optionaler, freiwilliger Online-Abgleich öffentlicher
+  Feiertage (date.nager.at) — dabei werden keine persönlichen Daten gesendet.
+  Ohne Aktivierung arbeitet die App vollständig offline.
 
 ## Datenschutz
 

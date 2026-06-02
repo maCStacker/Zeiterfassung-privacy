@@ -6,7 +6,7 @@ permalink: /privacy/
 
 # Datenschutzerklärung — Zeiterfassung
 
-**Letzte Aktualisierung:** 1. Juni 2026 (App-Version 1.0.10)
+**Letzte Aktualisierung:** 2. Juni 2026 (App-Version 1.0.15)
 
 Diese Datenschutzerklärung gilt für die Android-App **Zeiterfassung**
 (Paket-Name `com.macstacker.zeiterfassung`).
@@ -32,16 +32,26 @@ Postanschrift auf Anfrage per E-Mail.
 
 ## 2 — Grundsatz: Alle Daten bleiben auf deinem Gerät
 
-Die App speichert **alle** Daten ausschließlich **lokal auf deinem Gerät** in
-einer geräteinternen Datenbank. Es gibt:
+Die App speichert **alle** deine Daten ausschließlich **lokal auf deinem Gerät**
+in einer geräteinternen Datenbank. Es gibt:
 
-- **keine** Übertragung an einen Server oder in eine Cloud,
+- **keine** Übertragung deiner Zeit-, Konto- oder Einstellungsdaten an einen
+  Server oder in eine Cloud,
 - **keine** Benutzerkonten und keine Anmeldung,
 - **kein** Tracking, keine Analyse, keine Werbung,
-- **keine** Weitergabe an Dritte,
-- **keine** Internet-Berechtigung in der veröffentlichten App.
+- **keine** Weitergabe persönlicher Daten an Dritte.
 
 Der Entwickler hat **zu keinem Zeitpunkt Zugriff** auf deine Daten.
+
+**Einzige Ausnahme — optionaler Online-Feiertagsabgleich:** Wenn du in den
+Einstellungen den Online-Abgleich der Feiertage aktivierst, ruft die App
+**öffentliche Feiertagsdaten** vom Dienst **date.nager.at** ab. Dabei wird
+ausschließlich das abgefragte **Jahr und das Land („DE")** übertragen — **keine**
+deiner persönlichen Daten, Arbeitszeiten oder Einstellungen. Wie bei jedem
+Internet-Aufruf ist die technisch notwendige Übermittlung deiner IP-Adresse an
+diesen Dienst unvermeidbar. Der Abgleich ist **freiwillig (opt-in)**; ohne
+Aktivierung werden die Feiertage **vollständig offline auf dem Gerät berechnet**
+und es findet **kein** Internet-Zugriff statt.
 
 ---
 
@@ -74,6 +84,10 @@ Berechnung deiner Arbeitszeit innerhalb der App verwendet.
 - **Start abgeschlossen** (`android.permission.RECEIVE_BOOT_COMPLETED`): damit
   geplante Benachrichtigungen nach einem Neustart des Geräts erneut eingeplant
   werden können.
+- **Internet** (`android.permission.INTERNET`): ausschließlich für den optionalen
+  Online-Feiertagsabgleich (siehe Abschnitt 2). Wird der Abgleich nicht aktiviert,
+  stellt die App keine Internet-Verbindung her. Es werden dabei keine persönlichen
+  Daten übertragen.
 
 ---
 

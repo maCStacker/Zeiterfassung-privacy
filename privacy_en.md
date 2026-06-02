@@ -6,7 +6,7 @@ permalink: /privacy_en/
 
 # Privacy Policy — Zeiterfassung
 
-**Last updated:** 1 June 2026 (app version 1.0.10)
+**Last updated:** 2 June 2026 (app version 1.0.15)
 
 This Privacy Policy applies to the Android app **Zeiterfassung** (a working-time
 tracker, package name `com.macstacker.zeiterfassung`).
@@ -31,16 +31,25 @@ Postal address available on request by e-mail.
 
 ## 2 — Principle: all data stays on your device
 
-The app stores **all** data exclusively **locally on your device** in an
+The app stores **all** your data exclusively **locally on your device** in an
 on-device database. There is:
 
-- **no** transmission to any server or cloud,
+- **no** transmission of your time, account or settings data to any server or
+  cloud,
 - **no** user accounts and no sign-in,
 - **no** tracking, analytics or advertising,
-- **no** sharing with third parties,
-- **no** Internet permission in the published app.
+- **no** sharing of personal data with third parties.
 
 The developer has **no access** to your data at any time.
+
+**Sole exception — optional online holiday lookup:** If you enable the online
+holiday sync in the settings, the app fetches **public holiday data** from the
+service **date.nager.at**. Only the requested **year and the country ("DE")** are
+transmitted — **none** of your personal data, working times or settings. As with
+any Internet request, the technically required transmission of your IP address to
+that service is unavoidable. The sync is **voluntary (opt-in)**; without enabling
+it, holidays are **computed entirely offline on the device** and **no** Internet
+access takes place.
 
 ---
 
@@ -69,6 +78,9 @@ your working time within the app.
   on the device.
 - **Boot completed** (`android.permission.RECEIVE_BOOT_COMPLETED`): so scheduled
   notifications can be re-scheduled after the device restarts.
+- **Internet** (`android.permission.INTERNET`): used exclusively for the optional
+  online holiday lookup (see section 2). If the lookup is not enabled, the app
+  makes no Internet connection. No personal data is transmitted.
 
 ---
 
